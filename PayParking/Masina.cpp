@@ -11,8 +11,6 @@ void Masina::InregistrareMsina()
 	std::string nrMasina;
 	std::string dataIntrare;
 	int oraIntrare, minuteIntrare;
-	std::string dataIesire;
-	int oraIesire, minuteIesire;
 
 	std::cout << "Introduceti numarul masinii: ";
 	std::cin >> nrMasina;

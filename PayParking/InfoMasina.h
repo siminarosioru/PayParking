@@ -10,11 +10,6 @@ private:
 	std::string m_dataIntrare;	//ex:05/02
 	int m_oraIntrare, m_minuteIntrare;
 
-	std::string m_dataIesire;
-	int m_oraIesire, m_minuteIesire;
-
-	int m_plata;
-
 public:
 	InfoMasina();
 
@@ -24,9 +19,6 @@ public:
 	std::string getDataIntrare();
 	int getOraIntrare();
 	int getMinuteIntrare();
-	std::string getDataIsire();
-	int getOraIesire();
-	int getMinuteIesire();
 
 
 	bool VerificareMasina(const std::string& nrMasinaCautat);

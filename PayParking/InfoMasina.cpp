@@ -6,12 +6,6 @@ InfoMasina::InfoMasina()
 	m_dataIntrare = "necunoscut";
 	m_oraIntrare = 0;
 	m_minuteIntrare = 0;
-
-	m_dataIesire = "necunoscut";
-	m_oraIesire = 0;
-	m_minuteIesire = 0;
-
-	m_plata = 10;
 }
 
 InfoMasina::InfoMasina(std::string nrMasina, std::string dataIntrare, int oraIntrare, int minuteIntrare)
@@ -20,8 +14,6 @@ InfoMasina::InfoMasina(std::string nrMasina, std::string dataIntrare, int oraInt
 	m_dataIntrare = dataIntrare;
 	m_oraIntrare = oraIntrare;
 	m_minuteIntrare = minuteIntrare;
-
-	m_plata = 10;
 }
 
 std::string InfoMasina::getNrMasina()
@@ -42,21 +34,6 @@ int InfoMasina::getOraIntrare()
 int InfoMasina::getMinuteIntrare()
 {
 	return m_minuteIntrare;
-}
-
-std::string InfoMasina::getDataIsire()
-{
-	return m_dataIesire;
-}
-
-int InfoMasina::getOraIesire()
-{
-	return m_oraIesire;
-}
-
-int InfoMasina::getMinuteIesire()
-{
-	return m_minuteIesire;
 }
 
 bool InfoMasina::VerificareMasina(const std::string& nrMasinaCautat)
