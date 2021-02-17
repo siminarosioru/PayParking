@@ -21,9 +21,8 @@ int main()
 		cout << "0. Inregistrarea masinii care intra in parcare" << endl;
 		cout << "1. Numarul total de locuri disponibile" << endl;
 		cout << "2. Cautarea masinii inregistrate" << endl;
-		cout << "3. Plata stationarii" << endl;
-		cout << "4. Lista de masini stationate in parcare" << endl;
-		cout << "5. Exit" << endl;
+		cout << "3. Lista de masini stationate in parcare" << endl;
+		cout << "4. Exit" << endl;
 		cin >> optiune;
 		cin.ignore();
 		system("cls");
@@ -43,14 +42,10 @@ int main()
 			break; 
 
 		case 3:
-			itMasina->PlataStationare();
-			break;
-
-		case 4:
 			itMasina->ListaMasiniStationate();
 			break;
 
-		case 5:
+		case 4:
 			cout << "O zi buna!" << endl;
 			parcare = false;
 			break;

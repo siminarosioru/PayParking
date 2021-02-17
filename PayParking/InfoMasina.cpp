@@ -75,22 +75,3 @@ void InfoMasina::IstoricInregistrare()
 	std::cout << "Minute: " << m_minuteIntrare << std::endl;
 }
 
-int InfoMasina::Plata()
-{
-	if ((m_dataIntrare == m_dataIesire) && ((m_oraIesire - m_oraIntrare) == 0) && ((m_minuteIesire - m_minuteIntrare) < 60))
-	{
-		std::cout << "plata pt 1 ora: " << m_plata << std::endl;
-	}
-	else if ((m_dataIntrare == m_dataIesire) && ((m_oraIesire - m_oraIntrare) == 1) && (0 < (m_minuteIesire - m_minuteIntrare) < 60))
-	{
-		std::cout << "plata pt 2 ora: " << (m_plata+5) << std::endl;
-	}
-	else if ((m_dataIntrare == m_dataIesire) && (2 < (m_oraIesire - m_oraIntrare) < 24) && (0 < (m_minuteIesire - m_minuteIntrare) < 60))
-	{
-		std::cout << "plata pt mai multe ore: " << (((m_oraIesire - m_oraIntrare) * 5) + 5) << std::endl;
-	}
-
-	_getch();
-
-	return 0;
-}

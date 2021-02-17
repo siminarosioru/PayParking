@@ -16,8 +16,6 @@ public:
 
 	void CautareaMasinii();
 
-	bool PlataStationare();
-
 	void ListaMasiniStationate();
 
 };

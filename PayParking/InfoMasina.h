@@ -33,7 +33,6 @@ public:
 
 	void IstoricInregistrare();
 
-	int Plata();
 
 };
 
